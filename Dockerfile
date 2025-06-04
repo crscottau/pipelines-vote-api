@@ -1,5 +1,5 @@
 #FROM image-registry.openshift-image-registry.svc:5000/openshift/golang:latest as builder
-FROM registry.redhat.io/rhel8/go-toolset:latest
+FROM docker.io/library/golang:latest
 
 WORKDIR /build
 ADD . /build/
